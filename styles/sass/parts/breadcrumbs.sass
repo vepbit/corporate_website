@@ -1,0 +1,53 @@
+.breadcrumbs
+    margin-top: 37px
+    &__list
+        display: flex
+        flex-direction: row
+        list-style-type: none
+        padding: 0px
+        margin: 0px
+        justify-content: center
+        align-items: center
+    &__item
+        margin-right: 10px
+        position: relative
+        &:nth-last-of-type(1)
+            .breadcrumbs__link
+                &:hover
+                    color: var(--color-breadcrumbs-link-text)
+                    cursor: default
+            
+        &::after
+            content: ''
+            display: inline-block
+            position: relative
+            width: 6px
+            height: 6px
+            border-radius: 3px
+            margin-left: 10px
+            background-color: var(--color-breadcrumbs-dots-bg)
+    &__item
+        &:nth-last-child(1)
+            &::after
+                content: none
+    &__link
+        font-size: 12px
+        color: var(--color-breadcrumbs-link-text)
+        text-decoration: none
+        &:hover
+            color: var(--color-breadcrumbs-link-hover-text)
+@media (min-width: 576px)
+    .breadcrumbs
+        &__link
+            font-size: 16px
+            line-height: 23px
+        &__item
+            &::after
+                border-radius: 8px
+                width: 8px
+                height: 8px
+@media (min-width: 1400px)
+    .breadcrumbs
+        &__link
+            font-size: 18px
+            line-height: 23px

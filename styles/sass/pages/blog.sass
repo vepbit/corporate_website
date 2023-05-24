@@ -1,0 +1,475 @@
+*
+	box-sizing: border-box
+	padding: 0px
+	margin: 0px
+	list-style: none
+
+.post-card
+	padding: 0px
+	border: 1px solid #E5E5E5
+	border-radius: 5px
+	margin-bottom: 25px
+	padding-bottom: 20px
+	&:hover
+		cursor: pointer
+		border: 1px solid #fff
+		box-shadow: 4px 4px 35px rgba(255, 0, 243, 0.1), 4px 4px 35px rgba(0, 0, 146, 0.1)
+		transition-duration: .50s
+
+	&__image
+		margin-bottom: 10px
+		border-radius: 5px
+
+	&__img
+		width: 100%
+		height: 185px
+		border-radius: 5px
+
+	&__details
+		display: flex
+		flex-direction: row
+		padding: 0px 15px
+	
+	&__item
+		margin-right: 20px
+		&:nth-of-type(1)
+			a
+				background-image: url(../../../public/calendar.svg)
+
+		&:nth-of-type(2)
+			a
+				background-image: url(../../../public/watch.svg)
+
+	&__link
+		font-size: 12px
+		line-height: 18px
+		color: var(--color-blog-details-text)
+		text-decoration: none
+		padding-left: 17px
+		background-repeat: no-repeat
+		background-size: contain
+		&:hover
+			color: var(--color-blog-details-text) 
+			cursor: pointer
+
+	&__title
+		font-family: 'Lato-bold'
+		font-size: 16px
+		line-height: 24px
+		letter-spacing: 3%
+		color: var(--color-blog-title-text)
+		padding: 0px 15px
+		margin-bottom: 10px
+	
+	&__desc
+		font-size: 14px
+		line-height: 21px
+		color: var(--color-blog-desc-text)
+		padding: 0px 15px
+		margin-bottom: 15px
+	
+	&__btn
+		font-family: 'Lato-bold'
+		font-size: 14px
+		line-height: 21px
+		background: var(--color-blog-desc-btn)
+		text-decoration: none
+		padding: 0px 15px
+		-webkit-background-clip: text
+		-webkit-text-fill-color: transparent
+		padding-right: 16px
+		position: relative
+		display: inline-block
+		&::after
+			content: ''
+			position: absolute
+			background-image: url(../../../public/blog-post-fast-forward.svg)
+			background-repeat: no-repeat
+			background-position: center
+			display: block
+			top: 6px
+			right: 0px
+			width: 12px
+			height: 12px
+
+.blog
+	&-btn
+		text-align: center
+		margin-bottom: 60px
+		&__seemore
+			font-family: 'Lato-bold'
+			font-size: 18px
+			line-height: 27px
+			background: var(--color-blog-desc-btn)
+			text-decoration: none
+			-webkit-background-clip: text
+			-webkit-text-fill-color: transparent
+			padding-right: 25px
+			position: relative
+			display: inline-block 
+			&::after
+				content: ''
+				position: absolute
+				background-image: url(../../../public/blog-fast-forward.svg)
+				background-repeat: no-repeat
+				background-position: top
+				background-size: cover
+				display: block
+				top: 4px
+				right: 0px
+				width: 20px
+				height: 20px
+			
+			&:hover
+				background: var(--color-blog-desc-btn-hover)
+				-webkit-background-clip: text
+				-webkit-text-fill-color: transparent
+				padding-right: 25px
+				position: relative
+				display: inline-block 
+				transition: all ease-in-out .60s
+				&::after
+					top: 5px
+					background-position: bottom
+	&-search
+		position: relative
+		margin-bottom: 20px
+		&__wrapper
+			width: 100%
+			border: 1px solid var(--color-blog-aside)
+			border-radius: 5px
+			padding: 11px 45px 11px 10px
+			z-index: 1
+			&::placeholder
+				font-size: 14px
+				line-height: 21px
+				color: var(--color-blog-search)
+			
+		&__btn
+			background-image: url(../../../public/blog-search.svg)
+			background-repeat: no-repeat
+			background-size: cover
+			width: 40px
+			height: 40px
+			border: 0px
+			z-index: 2
+			position: absolute
+			right: 5px
+			top: 5px
+			&:hover
+				cursor: pointer
+
+.blog-aside
+	&__title
+		font-family: 'Lato-bold'
+		font-size: 16px
+		line-height: 24px
+		color: var(--color-blog-aside-text)
+		padding: 10px 20px
+		background-color: var(--color-blog-aside)
+		border-radius: 5px
+		margin-bottom: 10px
+
+.popular-post
+	padding: 10px 20px
+	border: 1px solid #E5E5E5
+	border-radius: 5px
+	margin-bottom: 15px
+	&:nth-last-of-type(1)
+		margin-bottom: 20px
+
+	&:hover
+		box-shadow: var(--color-blog-aside-shadow)
+		border: 1px solid #fff
+		transition-duration: .50s
+	
+	&__img
+		display: none
+
+	&__title
+		font-family: 'Lato-bold'
+		font-size: 16px
+		line-height: 24px
+		color: var(--color-blog-desc-text)
+		margin-bottom: 7px
+	
+	&__desc
+		font-size: 14px
+		line-height: 21px
+		letter-spacing: 2%
+		color: var(--color-blog-desc-text)
+		margin-bottom: 15px
+
+	&__btn
+		font-family: 'Lato-bold'
+		font-size: 14px
+		line-height: 21px
+		background: var(--color-blog-desc-btn)
+		text-decoration: none
+		padding: 0px
+		-webkit-background-clip: text
+		-webkit-text-fill-color: transparent
+		padding-right: 16px
+		position: relative
+		display: inline-block
+		&::after
+			content: ''
+			position: absolute
+			background-image: url(../../../public/blog-post-fast-forward.svg)
+			background-repeat: no-repeat
+			background-position: center
+			display: block
+			top: 6px
+			right: 0px
+			width: 12px
+			height: 12px
+		&:hover
+			cursor: pointer
+
+.blog-tags
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	padding: 0px
+	column-gap: 5px
+	row-gap: 10px
+	margin-bottom: 70px
+	
+	&__link
+		font-size: 14px
+		line-height: 21px
+		color: var(--color-blog-desc-text)
+		padding: 10px 20px
+		text-decoration: none
+		border: 1px solid #E5E5E5
+		border-radius: 5px
+		background-color: #fff
+		display: inline-block
+		&:hover
+			color: var(--color-blog-desc-text)
+			cursor: pointer
+			border: 1px solid #fff
+			background-color: #fff
+			box-shadow: 4px 4px 25px rgba(255, 0, 243, 0.07), -4px 4px 25px rgba(0, 0, 146, 0.07)
+			transition-duration: .50s
+
+@media (min-width: 576px)
+	
+	.post-card
+		&__image
+			margin-bottom: 18px
+
+		&__img
+			height: 350px
+
+		&__details
+			padding: 0px 20px
+		
+		&__title
+			font-size: 18px
+			line-height: 27px
+			padding: 0px 20px
+
+		&__desc
+			font-size: 16px
+			line-height: 24px
+			padding: 0px 20px
+			margin-bottom: 20px
+
+		&__btn
+			font-size: 16px
+			line-height: 27px
+			padding: 0px 20px
+			&::after
+				width: 14px
+				height: 14px
+				background-size: cover
+				top: 8px
+
+		&__link
+			font-size: 16px
+			line-height: 27px
+			padding-left: 20px
+
+	.blog-search
+		margin-bottom: 25px
+		&__wrapper
+			&::placeholder
+				font-size: 16px
+				line-height: 24px
+
+	.popular-post
+		padding: 10px 15px
+		display: flex
+		flex-direction: row
+		&:nth-last-of-type(1)
+			margin-bottom: 30px
+
+		&__content
+			margin-left: 39px
+
+		&__img
+			display: block
+			width: 154px
+			height: 154px
+			object-fit: cover
+			border-radius: 5px
+
+		&__title
+			margin-bottom: 10px
+
+		&__desc
+			margin-bottom: 15px
+
+		&__btn
+			display: none
+			font-size: 16px
+			line-height: 24px
+			padding-right: 19px
+			&::after
+				width: 14px
+				height: 14px
+				background-size: contain
+		&:hover
+			cursor: pointer
+
+@media (min-width: 768px)
+
+	.post-card
+		margin-bottom: 30px
+		&__details
+			margin-bottom: 25px
+
+		&__title
+			margin-bottom: 10px
+		
+		&__desc
+			margin-bottom: 25px
+
+	.blog
+		&-aside
+			&__title
+				margin-bottom: 15px
+		
+		&-tags
+			margin-bottom: 75px
+
+@media (min-width: 992px)
+
+	.blog
+		&-search
+			margin-bottom: 20px
+		
+		&-aside
+			&__title
+				margin-bottom: 10px
+
+		&-tags
+			gap: 10px
+			margin-bottom: 80px
+			&__link
+				padding: 5px 10px
+
+	.popular-post
+		padding: 8px 10px
+		margin-bottom: 10px
+		&__img
+			height: 109px
+			width: 109px
+			
+		&:nth-of-type(2)
+			margin-bottom: 20px
+
+		&__content
+			margin-left: 10px
+
+		&__title
+			margin-bottom: 5px
+
+		&__desc
+			display: none
+
+@media (min-width: 1200px)
+
+	.post-card
+		&:hover
+			cursor: inherit
+
+	.popular-post
+		&__desc
+			display: inline-block
+			span
+				display: none
+			
+@media (min-width: 1366px)
+	
+	.post-card
+		&__details
+			padding: 0px 25px
+		
+		&__title
+			padding: 0px 25px
+
+		&__desc
+			padding: 0px 25px
+			margin-bottom: 45px
+
+		&__btn
+			padding: 0px 25px
+			padding-right: 18px
+
+		&__link
+			padding-left: 25px
+
+	.popular-post
+		&__content
+			margin-left: 20px
+
+		&__title
+			span
+				display: none
+
+		&__desc
+			display: inline-block
+			margin-bottom: 10px
+			span
+				display: none
+
+@media (min-width: 1920px)
+
+	.post-card
+		&__desc
+			margin-bottom: 50px
+
+		&__link
+			font-size: 18px
+			line-height: 27px
+
+	.blog
+		&-aside
+			&__title
+				margin-bottom: 20px
+		
+		&-btn
+			margin-bottom: 110px
+
+	.popular-post
+		padding: 10px 15px
+		&__img
+			width: 154px
+			height: 154px
+
+		&__title
+			span
+				display: block
+
+		&__desc
+			margin-bottom: 10px
+		
+		&__btn
+			display: inline-block
+			&:hover
+				cursor: pointer
+
+		&:hover
+			cursor: inherit

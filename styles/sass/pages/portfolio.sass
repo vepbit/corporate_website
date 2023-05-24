@@ -1,0 +1,277 @@
+.full-portfolio
+    position: relative
+    margin: auto
+    &-item
+        position: relative
+        width: 100%
+        min-height: 467px
+        margin: auto
+        margin-bottom: 30px
+        background-repeat: no-repeat
+        // background-position: center center
+        background-size: cover
+        background-image: url('../../../public/full_portfolio/item_full.png')
+        border-radius: 5px
+        &__content
+            visibility: hidden
+            padding: 25px
+            margin: auto
+            background-color: var(--color-our-portfolio-full-item-bg)
+            color: var(--color-our-portfolio-full-content-text)
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 0px
+            left: 0px
+            cursor: pointer
+        &__description-inner
+            text-align: center
+
+        &__description
+            font-size: 14px
+            line-height: 21px
+            font-family: 'Lato-Regular'
+            letter-spacing: 0.03em
+            text-align: center
+        &__title
+            font-size: 18px
+            line-height: inherit
+            font-family: 'Lato-Bold'
+            letter-spacing: inherit
+            text-transform: uppercase
+            display: inline-block
+            margin: 0px
+            padding: 0px
+        &__list
+            list-style-type: none
+            display: flex
+            flex-direction: column
+            line-height: 19px
+            margin: 0px
+            padding: 0px
+            align-items: center
+            margin-top: 42px
+            &-item
+                position: relative
+                padding-bottom: 10px
+                display: flex
+                align-items: center
+                &:before
+                    content: ''
+                    position: relative
+                    display: block
+                    width: 12px
+                    height: 2px
+                    background-color: var(--color-our-portfolio-full-iten-line-bg)
+                    margin-right: 12px
+                &:nth-last-child(1)
+                    padding-bottom: 0px
+                &-text
+                    font-size: 14px
+                    line-height: 19px
+                    font-family: 'Lato-Regular'
+                    letter-spacing: inherit
+        &__details
+            display: block
+            position: relative
+            border: 2px solid var(--color-our-portfolio-full-details-color-border)
+            border-radius: 2px
+            padding: 4px 20px
+            margin: 50px auto 0px auto
+            font-size: 16px
+            line-height: 24px
+            font-family: 'Lato-Bold'
+            color: var(--color-our-portfolio-full-details-color-text)
+            text-decoration: none
+            width: max-content
+            &:hover
+                color: var(--color-why-we-button-text)
+                background: var(--color-why-we-button-bg)
+                border-color: transparent
+                border-radius: 2px
+        &:hover .full-portfolio-item__content
+            visibility: visible
+    &-control
+        display: flex
+        justify-content: space-between
+        flex-direction: column-reverse
+        align-items: flex-start
+        margin-bottom: 36px
+        &__inner
+            position: relative
+        &__list
+            list-style-type: none
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            line-height: 19px
+            margin: 10px 0px 0px 0px
+            padding: 0px
+        &__item
+            margin-right: 5px
+            transition: all 5s
+            // background-repeat: no-repeat
+            // background-position: center  right 10px
+            // background-size: auto
+            // background-image: url('../../../images/src/arrow-up_dark.svg')
+            &.active
+                // background-image: url('../../../images/src/arrow-up.svg'), linear-gradient(90deg,var(--color-primary-filter-one) 0%,var(--color-primary-filter-two) 91.27%)
+                // background-position: center  right 10px ,center right
+                // .full-portfolio-control__link
+                //     color: var(--color-our-portfolio-control-tag--active-text)
+            &:hover  .full-portfolio-control-popup
+                visibility: visible
+        &__clear
+            font-size: 16px
+            line-height: 32px
+            font-family: "Lato-Bold"
+            color: var(--color-our-portfolio-control-tag-clear-text)
+            padding: 2px 2px 2px 28px
+            background-image: url('../../../public/clear-filter.svg')
+            background-size: auto
+            background-repeat: no-repeat
+            background-position: center  left 2px
+            text-decoration: none
+        &__link
+            display: block
+            font-size: 16px
+            line-height: 24px
+            font-family: 'Lato-Bold'
+            text-decoration: none
+            color: var(--color-our-portfolio-control-tag-text)
+            background-repeat: no-repeat
+            background-position: center  right 10px
+            background-size: auto
+            background-image: url('../../../public/arrow-up_dark.svg')
+            padding: 8px 38px  8px 15px
+            border-radius: 5px
+            width: fit-content
+            &:hover
+                background-image: url('../../../public/arrow-up.svg'), linear-gradient(90deg,var(--color-primary-filter-one) 0%,var(--color-primary-filter-two) 91.27%)
+                background-position: center  right 10px ,center right
+                color: var(--color-our-portfolio-control-tag--active-text)
+
+            // &:hover ~ .full-portfolio-control-popup
+            //     visibility: visible
+
+        &__open-filter
+            font-size: 16px
+            line-height: 24px
+            font-family: "Lato-Bold"
+            text-align: center
+            color: var(--color-our-portfolio-control-open-filter-text)
+            text-decoration: none
+            padding-top: 8px
+            padding-bottom: 8px
+            width: 100%
+            border-radius: 5px
+            margin-top: 20px
+            background: linear-gradient(273.65deg,var(--primary-gradient-one) 0%, var(--primary-gradient-two) 100%)
+
+.full-portfolio-control-popup
+    position: relative
+    max-width: 600px
+    width: 100%
+    left: 0px
+    border-radius: 10px
+    z-index: 10
+    background-color: var(--color-our-portfolio-control-popup-bg)
+    visibility: hidden
+    transition: all 1s
+    &__list
+        list-style-type: none
+        display: flex
+        flex-wrap: wrap
+        flex-direction: row
+        padding: 20px 0px
+    &__item
+        padding: 10px 20px
+        margin: 5px  13px 5px 0px
+        border: 1px solid var(--color-our-portfolio-control-popup-border)
+        border-radius: 5px
+    &__link
+        font-size: 14px
+        line-height: 21px
+        font-family: 'Lato-Regular'
+        color: var(--color-our-portfolio-control-popup-text)
+        text-decoration: none
+        white-space: pre
+    // &.active
+    //     visibility: visible
+
+
+@media (min-width: 576px)
+    .full-portfolio
+        &-item
+            &__description
+                font-size: 18px
+                line-height: 27px
+            &__list
+                &-item
+                    &-text
+                        font-size: 18px
+                        line-height: 27px
+        &-control
+            margin-bottom: 50px
+            align-items: center
+            &__link
+                font-size: 14px
+                line-height: 21px
+                padding: 8px 37px 8px 15px
+            &__open-filter
+                display: none
+            &__list
+                flex-direction: row
+                align-items: center
+    .full-portfolio-control-popup
+        position: absolute
+        box-shadow: 0px 0px 15px var(--color-our-portfolio-control-popup-box-shadow)
+        top: 100px
+        &__list
+            padding: 20px
+@media (min-width: 768px)
+    .full-portfolio
+        &-control
+            flex-direction: row
+            margin-bottom: 66px
+            &__item
+                margin-right: 15px
+                background-size: auto
+            &__list
+                margin: 0px
+            &__link
+                font-size: 16px
+                line-height: 21px
+    .full-portfolio-control-popup
+        top: 55px
+        &__link
+            font-size: 16px
+            line-height: 21px
+
+@media (min-width: 992px)
+    .full-portfolio
+        &-item
+            margin-bottom: 40px
+            &__content
+                padding: 30px
+        &-control
+            &__item
+                margin-right: 20px
+@media (min-width: 1400px)
+    .full-portfolio
+        &-item
+            margin-bottom: 87px
+            &__details
+                font-size: 18px
+                line-height: 27px
+        &-control
+            &__item
+                margin-right: 30px
+            &__clear
+                padding: 2px 2px 2px 31px
+                line-height: 32px
+            &__link
+                font-size: 18px
+                line-height: 27px
+
+// @media (min-width: 1400px)

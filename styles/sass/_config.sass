@@ -1,0 +1,545 @@
+// USER VARIABLES SECTION
+
+
+// $blue: #050024
+// $black: #000000
+// $blue_second: #0B003A
+// $blue-gradient_1: #40A4FF
+// $blue-gradient_2: #311996
+// $white: #ffffff
+// $brown_1: #676767
+// $brown_2: #B0B0B0
+
+//The same colours for all themes
+body
+	--color-serivce-title-text: #000000
+	--color-serivce-separator-br: #B0B0B0
+	--color-serivce-desc-text: #676767 
+	--color-primary-filter-one: #000092
+	--color-primary-filter-two: #FF00F3
+	--color-form-send-filter:  rgba(99, 33, 249, 0.3)
+	--line-height-default: 1.65
+	--color-accent: #FF00F3
+	--color-default-text: #080048
+	--size-default-font: 16px
+	--font-default-family: "Lato-Regular"
+
+// Colors and varibles for white theme
+[data-color-mode=white]
+	--color-bg: #ffffff
+	--primary-gradient-one: #40A4FF
+	--primary-gradient-two: #311996
+	--color-page-title: #080048
+	--color-section-title-text: #0B003A
+
+	--color-header-bg: #F2F2F2
+	--color-header--full-bg: #FFFFFF
+
+	--color-header-switcher-text: #B7B7B7
+	--color-header-switcher-active-text: #000000
+	--color-header-switcher-filter: rgba(72, 19, 152, 0.05)
+	--color-header-switcher-active-filter: rgba(72, 19, 152, 0.2)
+	--color-header-switcher-bg: #ffffff
+	--color-header-modal-menu-bg: rgb(124, 124, 124, 0.95)
+
+	--color-breadcrumbs-link-text: #000000
+	--color-breadcrumbs-link-hover-text: rgba(213, 13, 177, 1)
+	--color-breadcrumbs-dots-bg: #000000
+
+	--color-video-solution-title: rgba(8, 0, 72, 1)
+
+	--color-video-solution-number-text: #0B003A
+	--color-video-solution-line-bg: #0B003A
+	--color-video-solution-name-text: #D50DB1
+
+
+	--color-contact-item-title-text: #D50DB1
+	--color-contact-item-title-on-hover-text: #D50DB1
+	--color-contact-item-bg: #ffffff
+	--color-contact-item-on-hover-bg: #ffffff
+	--color-contact-item-data-text: #000000
+	--color-contact-item-data-on-hover-text: #000000
+	--color-contact-item-filter-dark: #8A8A8A
+	--color-contact-item-box-shadow: rgba(138, 138, 138, 0.7)
+	--color-contact-item-box-shadow-hover-one:rgba(255, 0, 243, 0.5)
+	--color-contact-item-box-shadow-hover-two: rgba(0, 0, 146, 0.5)
+
+
+	--color-social-link-bg: #FFFFFF
+	--color-social-link-on-hover-bg: #FFFFFF
+	--color-social-link-filter-dark: #8A8A8A
+	--color-social-link-box-shadow: rgba(138, 138, 138, 0.5)
+
+
+	--color-footer-bg: #050024
+	--color-footer-text: #ffffff
+	--color-form-bg: #ffffff
+	--color-form-main-text: #000000
+	--color-form-label-box-shadow: #C1B5F4
+	--color-form-main-bg: #ffffff
+	--color-form-send-text: #ffffff
+
+	--color-form-error-box-shadow: rgba(162, 10, 10, 0.15)
+	--color-form-sucsess-box-shadow:rgba(0, 103, 44, 0.15)
+	--color-form-sucsess-text: rgba(39, 174, 96, 1)
+
+
+	--color-serivce-bg: #ffffff
+	--color-serivce-single-bg: #ffffff
+	--color-service-single-title-text: #000000
+	--color-service-single-title-text-hover: #000000
+	--color-our-work-bg: #ffffff
+	--color-our-work-text: #000000
+	--color-our-work--item-bg: #ffffff
+	--color-our-work-line-bg: #000000
+	--color-our-work-box-shadow: rgba(60, 182, 167, 0.3)
+	--color-error-title-text: #080048
+	
+	--color-our-portfolio-full-item-bg: rgba(0, 0, 0, 0.6)
+	--color-our-portfolio-full-content-text: #ffffff
+	--color-our-portfolio-full-iten-line-bg: #ffffff
+	--color-our-portfolio-full-details-color-border: #ffffff
+	--color-our-portfolio-full-details-color-text: #ffffff
+	--color-our-portfolio-control-tag-text: #0B003A
+	--color-our-portfolio-control-tag--active-text: #ffffff
+	--color-our-portfolio-control-tag-clear-text: #0B003A
+	--color-our-portfolio-control-open-filter-text: #ffffff
+	--color-our-portfolio-control-popup-bg: #ffffff
+	--color-our-portfolio-control-popup-border: #E6E6E6
+	--color-our-portfolio-control-popup-box-shadow: rgba(0, 0, 0, 0.1)
+	--color-our-portfolio-control-popup-text: #5E5E5E
+	--color-why-we-title-text: #0B003A
+	--color-why-we-line-bg: #0B003A
+	--color-why-we-desc-text: #5E5E5E
+	--color-why-we-button-bg: rgba(193, 181, 244, 1)
+	--color-why-we-button-text: rgba(53, 53, 53, 1)
+
+
+
+	--color-our-team-title-text: #0B003A
+	--color-our-team-desc-text: #5E5E5E
+	--color-blog-details-text: #5E5E5E
+	--color-blog-title-text: #000000
+	--color-blog-desc-text: #5E5E5E
+	--color-blog-desc-btn: linear-gradient(90deg, var(--color-primary-filter-one) 0%, var(--color-primary-filter-two) 91.27%)
+	--color-blog-desc-btn-hover: linear-gradient(-90deg, var(--color-primary-filter-one) 0%, var(--color-primary-filter-two) 91.27%)
+	--color-blog-aside: #C1B5F4
+	--color-blog-search: #B1B1B1
+	--color-blog-aside-text: #fff
+	--color-blog-aside-shadow: 0px 4px 20px rgba(0, 0, 146, 0.1), 5px 0px 20px rgba(255, 0, 243, 0.1)
+
+	--color-our-company-title-text: #0B003A
+	--color-our-company-desc-text: #5E5E5E
+	--color-our-company-numbers-title-text: #D50DB1
+	--color-our-company-numbers-number-text: #D50DB1
+
+
+	--color-our-team-member-text: #ffffff
+	--color-testimonials-text: #000000
+	--color-testimonials-bg: #ffffff
+	--color-testimonials-box-shadow-one:rgba(255, 0, 243, 0.15)
+	--color-testimonials-box-shadow-two: rgba(0, 0, 146, 0.15)
+
+	--size-header-box-shadow: 4px
+	--size-header-box-shadow-active: 0px 1px 20px
+	--size-form-send-filter: 20px
+	--size-service-filter: 100px
+	--size-social-link-filter: 30px
+	--size-contact-central-line: 1px
+
+	
+
+
+// Colors and varibles for dark theme
+
+[data-color-mode=dark]
+	--color-bg: #262626
+	--primary-gradient-one: #71BBFF
+	--primary-gradient-two: #5730FA
+	--color-page-title: #ffffff
+	--color-header-bg: transparent
+
+	--color-header-switcher-text: #888888
+	--color-header-switcher-active-text: #ffffff
+	--color-header-switcher-filter: rgba(72, 19, 152, 0.05)
+	--color-header-switcher-active-filter: rgba(72, 19, 152, 0.2)
+	--color-header-switcher-bg: #000000
+	--color-section-title-text: #ffffff
+
+	--color-breadcrumbs-link-text: #E5E5E5
+	--color-breadcrumbs-dots-bg: #E5E5E5
+
+	--color-video-solution-title: #ffffff
+
+	--color-video-solution-number-text: #ffffff
+	--color-video-solution-line-bg: #ffffff
+	--color-video-solution-name-text: #FF9BFA
+
+	--color-contact-item-title-text: #FF9BFA
+	--color-contact-item-title-on-hover-text: #D50DB1
+	--color-contact-item-bg: #1E1E1E
+	--color-contact-item-on-hover-bg: #ffffff
+	--color-contact-item-data-text: #FFFFFF
+	--color-contact-item-data-on-hover-text: #000000
+	--color-contact-item-filter-dark: #8A8A8A
+	--color-social-link-bg: #1E1E1E
+	--color-social-link-on-hover-bg: #FFFFFF
+	--color-social-link-filter-dark: transparent
+	--color-footer-bg: #262626
+	--color-footer-text: #ffffff
+	--color-form-bg: #262626
+	--color-form-main-text: #000000
+	--color-form-label-box-shadow: #C1B5F4
+	--color-form-main-bg: #ffffff
+	--color-form-send-text: #ffffff
+	--color-serivce-bg: #262626
+	--color-serivce-single-bg: #ffffff
+	--color-service-single-title-text: #ffffff
+	--color-service-single-title-text-hover: #000000
+	--color-our-work-bg: #262626
+	--color-our-work-text: #000000
+	--color-our-work--item-bg: #ffffff
+	--color-our-work-line-bg: #000000
+	--color-error-title-text: #ffffff
+
+
+	--color-our-portfolio-full-item-bg: rgba(0, 0, 0, 0.6)
+	--color-our-portfolio-full-content-text: #ffffff
+	--color-our-portfolio-full-iten-line-bg: #ffffff
+	--color-our-portfolio-full-details-color-border: #ffffff
+	--color-our-portfolio-full-details-color-text: #ffffff
+	--color-our-portfolio-control-tag-text: #E6E6E6
+	--color-our-portfolio-control-tag--active-text: #ffffff
+	--color-our-portfolio-control-tag-clear-text: #E6E6E6
+	--color-our-portfolio-control-open-filter-text: #ffffff
+	--color-our-portfolio-control-popup-bg: #ffffff
+	--color-our-portfolio-control-popup-border: #E6E6E6
+	--color-our-portfolio-control-popup-box-shadow: rgba(0, 0, 0, 0.1)
+	--color-our-portfolio-control-popup-text: #5E5E5E
+
+	--color-why-we-title-text: #ffffff
+	--color-why-we-line-bg: #ffffff
+	--color-why-we-desc-text: #E5E5E5
+
+	--color-our-team-title-text: #ffffff
+	--color-our-team-desc-text: #ffffff
+	--color-our-team-member-text: #ffffff
+
+
+
+	--size-header-box-shadow: 0px
+	--size-form-send-filter: 0px
+	--size-service-filter: 0px
+	--size-social-link-filter: 0px
+	--size-contact-central-line: 0px
+	.social-link__filter
+		display: none
+	.social-link:hover
+		background-color: transparent
+
+	// .full-portfolio-control__link
+	// 	background-image: url(../../../../public/arrow-up_white.svg)
+	// .full-portfolio-control__clear
+	// 	background-image: url(../../../../public/clear-filter__white.svg)
+
+// $accent: orange // Accent Color
+// $fontsize: 16px // Body Font Size
+// $textcolor: #333 // Text Color
+// $lineheight: 1.65 // Document Line Height
+// $userfont: roboto-oh5, sans-serif // User Font Family
+// $systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
+
+// Bootstrap compatible gutter variable => $gutter
+$grid-breakpoints: (  xs: 0,sm: 576px,md: 768px,lg: 992px,xl: 1200px,xxl: 1496px)
+$container-max-widths: (  sm: 540px,md: 720px,lg: 960px,xl: 1140px,xxl: 1326px) 
+$grid-gutter-width: 30px !default
+
+$gutter: $grid-gutter-width
+
+
+// IMPORT SECTION
+
+// @import 'node_modules/bootstrap/scss/_functions.scss' // Bootstrap Reboot collection
+// @import 'node_modules/bootstrap/scss/_variables.scss' // Bootstrap Reboot collection
+// @import 'node_modules/bootstrap/scss/_mixins.scss' // Bootstrap Reboot collection
+
+
+@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss' // Bootstrap Reboot collection
+@import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss' // Bootstrap Breakpoints mixin
+@import 'node_modules/bootstrap/scss/bootstrap-grid.scss' // Optional Bootstrap Grid
+// @import 'node_modules/bootstrap/scss/_grid.scss' // Optional Bootstrap Utilites
+
+// FONTS LOAD SECTION
+
+@mixin font($fname, $fstyle, $fweight, $furl)
+	@font-face
+		font-family: $fname
+		font-style: $fstyle
+		font-weight: $fweight
+		font-display: swap
+		src: url($furl) format('woff2')
+
+// @include font('roboto-oh5', normal, 400, '../fonts/roboto-regular-webfont.woff2')
+// @include font('roboto-oh5', italic, 400, '../fonts/roboto-italic-webfont.woff2')
+// @include font('roboto-oh5', normal, 700, '../fonts/roboto-bold-webfont.woff2')
+// @include font('roboto-oh5', italic, 700, '../fonts/roboto-bolditalic-webfont.woff2')
+
+
+
+@include font('Lato-Light', normal, 300, '../fonts/Lato-Light.ttf')
+@include font('Lato-Regular', normal, 400, '../fonts/Lato-Regular.ttf')
+@include font('Lato-Bold', normal, 700, '../fonts/Lato-Bold.ttf')
+@include font('Lato-Black', normal, 800, '../fonts/Lato-Black.ttf')
+
+
+
+// GENERAL DOCUMENT STYLES
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: var(--color-accent)
+	color: #fff
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+
+::-webkit-scrollbar
+	width: 10px
+
+
+::-webkit-scrollbar-track 
+	box-shadow: inset 0 0 5px grey
+	border-radius: 2px
+
+/* Handle */
+::-webkit-scrollbar-thumb
+	background: linear-gradient(0deg, var(--primary-gradient-one) 0%, var(--primary-gradient-two) 100%)
+	border-radius: 5px
+
+
+#__next
+	position: relative
+	overflow-x: hidden
+	padding-top: 90px
+	
+body
+	font-family: var(--font-default-family)
+	font-size: var(--size-default-font)
+	line-height: var(--line-height-default)
+	color: var(--color-default-text)
+	min-width: 320px
+	position: relative
+	overflow-x: hidden
+	background-color: var(--color-bg)
+p
+	padding: 0
+	margin: 0
+
+.page-wrapper
+	position: relative
+	padding-top: 46px
+
+.see-more-inner
+	text-align: center
+	padding-top: 20px
+
+.contact-us-button-colorful-inner
+	text-align: center
+	padding-top: 40px
+
+.section
+	padding-top: 35px
+	padding-bottom: 35px
+	&__top
+		padding-top: 0px!important
+	&__bottom
+		padding-bottom: 0px!important
+
+
+.see-more
+	font-size: 18px
+	line-height: 27px
+	font-family:  'Lato-Bold'
+	position: relative
+	padding-right: 25px
+	background: linear-gradient(90deg, var(--color-primary-filter-one) 0%,var(--color-primary-filter-two) 91.27%)
+	-webkit-background-clip: text
+	-webkit-text-fill-color: transparent
+	display: inline-block
+	&::after
+		content: ""
+		position: absolute
+		background-repeat: no-repeat
+		background-position: top
+		background-size: auto, auto
+		background-image: url('../../public/arrow_lest.svg')
+		display: block
+		width: 24px
+		height: 24px
+		display: block
+		top: 3px
+		right: -5px
+
+	&:hover
+		background: linear-gradient(-90deg, var(--color-primary-filter-one) 0%,var(--color-primary-filter-two) 91.27%)
+		-webkit-background-clip: text
+		-webkit-text-fill-color: transparent
+		&::after
+			background-position: bottom
+
+.contact-us-button-colorful
+	font-size: 18px
+	line-height: 27px
+	font-family:  'Lato-Bold'
+	position: relative
+	padding-right: 25px
+	background: linear-gradient(90deg, var(--color-primary-filter-one) 0%,var(--color-primary-filter-two) 91.27%)
+	-webkit-background-clip: text
+	-webkit-text-fill-color: transparent
+	display: inline-block
+	position: relative
+	&::after
+		content: ""
+		position: absolute
+		background-repeat: no-repeat
+		background-position: top
+		background-size: auto, auto
+		background-image: url('../../public/arrow_lest.svg')
+		width: 24px
+		height: 24px
+		display: block
+		top: 3px
+		right: -5px
+		
+	&:hover
+		background: linear-gradient(-90deg, var(--color-primary-filter-one) 0%,var(--color-primary-filter-two) 91.27%)
+		-webkit-background-clip: text
+		-webkit-text-fill-color: transparent
+		&::after
+			background-position: bottom
+
+	
+.section-title
+	font-size: 22px
+	color: var(--color-section-title-text)
+	font-family: "Lato-Black"
+	line-height: 32px
+	text-transform: uppercase
+	display: flex
+	align-items: center
+	position: relative
+	padding-left: 30px
+	&::before
+		content: ''
+		width: 12px
+		height: 2px
+		background-color: var(--color-section-title-text)
+		position: absolute
+		left: 0px
+		top: 16px
+	&_404
+		font-size: 16px
+
+.page-title
+	font-size: 24px
+	font-family: "Lato-Black"
+	color: var(--color-page-title)
+	line-height: 36px
+	text-align: center
+	margin-top: 15px
+	margin-bottom: 40px
+
+@media (max-width: 576px)
+	ul.hide,a.hide
+		display: none
+
+@media (min-width: 576px)
+	[data-color-mode=white]
+		--size-service-filter: 80px
+	.page-wrapper
+		padding-top: 66px
+
+	.section-title
+		&::before
+			width: 14px
+
+	.page-title
+		font-size: 32px
+		line-height: 43px
+		&_404
+			font-size: 24px
+	.contact-us-button-colorful
+		&-inner
+			padding-top: 20px
+		
+@media (min-width: 768px)
+	.section
+		padding-top: 60px
+		padding-bottom: 60px
+	.page-wrapper
+		padding-top: 91px
+
+	.section-title
+		font-size: 24px
+		line-height: 36px
+		padding-left: 48px
+		&::before
+			width: 28px
+			height: 4px
+	.page-title
+		font-size: 38px
+		line-height: 57px
+		margin-bottom: 50px
+	.see-more
+		// &::after
+		// 	right: -5px
+
+@media (min-width: 992px)
+	.section
+		padding-top: 75px
+		padding-bottom: 75px
+	.section-title
+		font-size: 30px
+		line-height: 45px
+		padding-left: 62px
+
+@media (min-width: 1400px)
+	.section
+		padding-top: 100px
+		padding-bottom: 100px
+	.section-title
+		font-size: 40px
+		line-height: 60px
+		padding-left: 68px
+		&::before
+			width: 44px
+			top: 25px
+	.page-title
+		font-size: 58px
+		line-height: 87px
+		margin-bottom: 70px
+		&_404
+			font-size: 36px
+@media (min-width: 1496px)
+	.section
+		padding-top: 150px
+		padding-bottom: 150px
+	.see-more
+		font-size: 24px
+		line-height: 36px
+		&::after
+			top: 8px
+	.section-title
+		font-size: 50px
+		line-height: 65px
+		padding-left: 70px
+	.page-title
+		font-size: 72px
+		line-height: 93px
+		margin-bottom: 100px

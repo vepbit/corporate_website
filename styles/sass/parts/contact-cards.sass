@@ -1,0 +1,138 @@
+.section-contact-list
+    .row
+        text-align: center
+        justify-content: center
+
+.contact-item
+    position: relative
+    // background-color: var(--color-contact-item-bg)
+    margin-bottom: 22px
+    box-shadow: 0px 0px 60px -25px var(--color-contact-item-box-shadow)
+    text-decoration: auto
+    display: block
+    &:hover
+        box-shadow: 0px 0px 100px -40px var(--color-contact-item-box-shadow-hover-one), 0px 0px 100px -40px var(--color-contact-item-box-shadow-hover-two)
+    &__details
+        margin-top: 14px
+        text-align: center
+    &__img-inner
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding: 14px
+        position: relative
+        z-index: 5
+    &__img
+        // width: 64px
+        height: auto
+    &__title
+        font-size: 14px
+        font-family: "Lato-Regular"
+        line-height: 19px
+        color: var(--color-contact-item-title-text)
+        text-transform: uppercase
+    &__data
+        font-size: 14px
+        font-family: "Lato-Regular"
+        color: 	var(--color-contact-item-data-text)
+        line-height: 21px
+        margin-top: 10px
+        text-decoration: none
+    &__filter
+        visibility: hidden
+        position: absolute
+        width: 75px
+        height: 65px
+        background: linear-gradient(90deg, var(--color-primary-filter-one) 0%,var(--color-primary-filter-two) 91.27%)
+        background-blend-mode: normal
+        filter: blur(var(--size-service-filter))
+        z-index: 1
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+        display: none
+    &__filter-dark
+        // visibility: hidden
+        position: absolute
+        width: 75px
+        height: 65px
+        background: var(--color-contact-item-filter-dark)
+        filter: blur(var(--size-service-filter))
+        z-index: 2
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+        display: none
+    &__background
+        position: absolute
+        top: 0px
+        left: 0px
+        width: 100%
+        height: 100%
+        z-index: 3
+        background-color: var(--color-contact-item-bg)
+    &:hover  .contact-item__filter
+        visibility: visible
+        cursor: pointer
+    &:hover  .contact-item__filter-dark
+        visibility: hidden
+
+    &:hover  .contact-item__background
+        background-color: var(--color-contact-item-on-hover-bg)
+    &:hover .contact-item__title
+        color: var(--color-contact-item-title-on-hover-text)
+    &:hover .contact-item__data
+        color: 	var(--color-contact-item-data-on-hover-text)
+
+@media (min-width: 576px)
+    .contact-item
+        height: 170px
+        &__filter
+            width: 195px
+            height: 100px
+        &__filter-dark
+            width: 195px
+            height: 100px
+
+@media (min-width: 768px)
+    .contact-item
+        height: 160px
+        &__filter
+            width: 107px
+            height: 97px
+        &__filter-dark
+            width: 107px
+            height: 97px
+
+@media (min-width: 992px)
+    .contact-item
+        height: 201px
+        &__title
+            font-size: 16px
+            line-height: 21px
+        &__data
+            font-size: 16px
+            line-height: 21px
+        &__img-inner
+            padding: 21px
+        &__details
+            margin-top: 20px
+        &__filter-dark,
+        &__filter
+            width: 144px
+            height: 133px
+
+
+@media (min-width: 1400px)
+    .contact-item
+        height: auto
+        &__img-inner
+            flex-direction: row
+            padding:  40px 20px
+
+        &__details
+            padding-left: 15px
+            margin-top: 5px
+        &__img-inner
+            justify-content: center
+

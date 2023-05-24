@@ -1,0 +1,227 @@
+.header-wrapper
+    background-color: var(--color-header-bg)
+    // mix-blend-mode: multiply
+    position: fixed
+    width: 100%
+    top: 0
+    z-index: 99
+[data-color-mode=dark]
+    .header-wrapper
+        mix-blend-mode: unset
+.header
+    display: grid
+    height: 46px
+    grid-template-columns: repeat(2,1fr)
+    align-items: center
+    &__link
+    &__logo
+
+
+
+.header-modal-menu
+    position: fixed
+    display: none
+    width: 100%
+    height: 100vh
+    left: 0px
+    bottom: 0px
+    background-color: var(--color-header-modal-menu-bg)
+    &.active
+        display: block
+        z-index: 2
+    &__list
+        position: relative
+        padding: 0px
+        margin: 0px
+        list-style-type: none
+        display: flex
+        width: 100%
+        height: 100vh
+        justify-content: center
+        align-items: flex-start
+        flex-direction: column
+    &__item.active
+        a
+            padding-left: 32px
+    &__item
+        a:hover
+            padding-left: 32px
+            color: #fff
+    &__link
+        font-size: 30px
+        font-family: "Lato-Black"
+        line-height: 40px
+        color: #ffffff
+        text-decoration: none
+        margin-bottom: 30px
+        display: block
+
+.close-button
+    width: 35px
+    height: 35px
+    position: absolute
+    background-image: url('../../public/close.svg') 
+    background-position: center
+    background-repeat: no-repeat
+    right: 0px
+    top: 25px
+    cursor: pointer
+.switch-theme
+    display: none
+    visibility: hidden
+    ul
+        list-style-type: none
+        padding: 0px
+        margin: 0px
+        display: flex
+        justify-content: center
+        li
+            box-shadow: var(--size-header-box-shadow) var(--size-header-box-shadow) var(--size-header-box-shadow) var(--color-header-switcher-filter)
+            position: relative
+            border-radius: 2px
+            a
+                font-size: 14px
+                font-family: "Lato-Bold"
+                padding: 4px 25px
+                color: var(--color-header-switcher-text)
+                text-decoration: none
+                display: block
+                cursor: pointer
+            &.active
+                box-shadow: var(--size-header-box-shadow-active) var(--color-header-switcher-active-filter)
+                background-color: var(--color-header-switcher-bg)
+                pointer-events: none
+                &:after
+                    content: ''
+                    position: absolute
+                    height: 100%
+                    width: 100%
+                    background: var(--color-header-switcher-filter)
+                    filter: blur(8px)
+                    left: 0
+
+                a 
+                    color: var(--color-header-switcher-active-text)
+
+.menu-opener
+    height: 100%
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    justify-content: center
+    cursor: pointer
+    &__line
+        display: block
+        background: linear-gradient(273.65deg,var(--primary-gradient-one) 0%, var(--primary-gradient-two) 100%)
+        border-radius: 2px
+        height: 6px
+        &:nth-child(1)
+            margin-bottom: 4px
+            width: 41px
+        &:nth-child(2)
+            margin-bottom: 4px
+            width: 30px
+        &:nth-child(3)
+            margin-bottom: 0px
+            width: 16px
+
+            
+@media (min-width: 576px)
+    .header
+        height: 66px
+        grid-template-columns: repeat(3,1fr)
+        &__link
+        &__logo
+            width: 99px
+            height: auto
+
+    .switch-theme
+        display: block
+    .menu-opener
+        &__line
+            &:nth-child(1)
+                width: 49px
+                margin-bottom: 6px
+            &:nth-child(2)
+                width: 33px
+                margin-bottom: 6px
+            &:nth-child(3)
+    .header-modal-menu
+        &__list
+
+        &__item
+            a
+                &:hover
+                    padding-left: 38px
+        &__item
+            &.active
+                a
+                    padding-left: 38px
+
+        &__link
+            font-size: 40px
+            line-height: 60px
+
+@media (min-width: 768px)
+    .header
+        height: 91px
+        &__link
+        &__logo
+            width: 145px
+    .switch-theme
+        display: block
+        ul
+            li
+                a
+                    font-size: 16px
+                    line-height: 19px
+                    padding: 7px 36px
+    .menu-opener
+        &__line
+            &:nth-child(1)
+                width: 64px
+                height: 8px
+            &:nth-child(2)
+                width: 43px
+                height: 8px
+            &:nth-child(3)
+                width: 21px
+                height: 8px
+    .header-modal-menu
+        &.active
+        &__list
+        &__item
+            a
+                &:hover
+                    padding-left: 40px
+            &.active
+                a
+                    padding-left: 40px
+
+@media (min-width: 992px)
+    .header
+        &__link
+        &__logo
+            width: 151px
+
+
+    .header-wrapper
+        background-color: var(--color-header--full-bg)
+@media (min-width: 1400px)
+    .header
+        &__link
+        &__logo
+            width: 155px
+    .header-modal-menu
+        &.active
+        &__list
+        &__link
+            font-size: 50px
+            line-height: 75px
+@media (min-width: 1496px)
+    .header
+        &__link
+            font-size: 50px
+            line-height: 75px
+        &__logo
+            width: 176px

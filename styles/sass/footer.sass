@@ -1,0 +1,79 @@
+.footer
+    text-align: center
+    background-color: var(--color-footer-bg)
+    padding: 42px 0px
+    color: var(--color-footer-text)
+    &__logo
+        // width: 50px
+        height: auto
+    &-menu
+        width: 75%
+        list-style-type: none
+        text-align: center
+        margin: 40px auto
+        padding: 0px
+        &__item
+            font-family: "Lato-Bold"
+            font-size: 12px
+            line-height: 18px
+            padding: 0px 7.5px
+            display: inline-block
+            a
+                color: var(--color-footer-text)
+                font-size: 12px
+                font-family: "Lato-Bold"
+                text-decoration: none
+                &:hover
+                    color: blue
+                    text-decoration: none
+            &:first-of-type(1)
+                padding-left: 0px
+            &:last-of-type(1)
+                padding-right: 0px
+    &__copyright
+        margin-top: 20px
+        font-size: 10px
+        font-family: "Lato-Regular"
+        line-height: 15px
+            
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px)
+    .footer
+        padding: 45px 0px
+        &-menu
+            width: 100%
+            margin: 50px auto
+            &__item
+                padding: 0px 10px
+                a
+                    font-size: 18px
+        &__copyright
+            font-size: 14px
+            line-height: normal
+        &__logo
+            width: 84px
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px)
+    .footer
+        &-menu
+            margin: 85px auto
+            &__item
+                padding: 0px 30px
+        &__logo
+            width: 114px
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px)
+    .footer
+        &__logo
+            width: 118px
+        &-menu
+            margin: 82px auto
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px)
+    .footer
+        &__logo
+            width: 124px
+        &-menu
+            margin: 80px auto
+            

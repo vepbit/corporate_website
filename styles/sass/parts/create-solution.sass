@@ -1,0 +1,232 @@
+.create-solution
+    background-position: center top
+    background-size: contain
+    background-image: url('../../../public/create-solution.webp')
+    background-repeat: no-repeat
+    // mix-blend-mode: multiply
+.video-company
+    // height: 265px
+    // width: 100%
+    background-image: url('../../../public/background__video.webp')
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: center
+    overflow: hidden
+    margin-top: 60px
+    display: flex
+    justify-content: center
+    align-items: center
+    video
+        height: 264px
+        width: 300px
+        padding: 24px 0 15px
+
+.video-solution-text
+    text-align: center
+    &__title
+        color: var(--color-video-solution-title)
+        font-size: 28px
+        line-height: 28px
+        font-family: "Lato-Black"
+        text-transform: uppercase
+        text-align: center
+        margin-top: 40px
+.video-solution-button
+    text-align: center
+.contact-us-button
+    font-size: 16px
+    font-family: 'Lato-Bold'
+    position: relative
+    color: var(--color-form-send-text)
+    line-height: 24px
+    padding: 8px 31.5px
+    border: 0px
+    border-radius: 5px
+    background: linear-gradient(273.65deg, var(--primary-gradient-one) 0%, var(--primary-gradient-two ) 100%)
+    display: inline-block
+    margin: 70px auto
+    // margin-top: 70px
+    text-decoration: none
+    &::after
+        content: ''
+        position: absolute
+        top: 10px
+        left: -10px
+        width: 100%
+        height: 100%
+        filter: blur(var(--size-form-send-filter)) 
+        background-color: var(--color-form-send-filter)
+        z-index: -1
+
+    &:hover
+        color: var(--color-form-send-text)
+        background: linear-gradient(-273.65deg, var(--primary-gradient-one) 0%, var(--primary-gradient-two ) 100%)
+
+.video-solution-steps
+    display: flex
+    justify-content: center
+    align-items: center
+    &__number
+        font-size: 10px
+        line-height: 14px
+        font-family: "Lato-Black"
+        color: var(--color-video-solution-number-text)
+        text-transform: uppercase
+        position: relative
+        top: -1px
+
+    &__line
+        width: 4px
+        height: 2px
+        background-color: var(--color-video-solution-line-bg)
+        position: relative
+        margin-left: 4px
+        top: -3px
+    &__name
+        font-size: 14px
+        line-height: 24px
+        font-family: "Lato-Black"
+        color: var(--color-video-solution-name-text)
+        text-transform: uppercase
+        position: relative
+        margin-left: 4px
+
+@media (min-width: 576px)
+    .header
+        height: 66px
+    .video-solution-text
+        &__title
+            font-size: 36px
+            line-height: 36px
+            margin-top: 20px
+    .video-company
+        background-image: url('../../../public/background_video_576.webp')
+        margin-top: 46px
+        video
+            height: 336px
+            width: calc(100% - 120px)
+            padding: 18.5px 0px
+    .video-solution-steps
+        &__number
+            font-size: 14px
+            line-height: 14px
+            top: -3px
+        &__line
+            width: 10px
+            top: -6px
+            margin-left: 5px
+        &__name
+            font-size: 24px
+            line-height: 24px
+            margin-left: 5px
+
+    .contact-us-button
+        margin: 55px auto 48px
+
+
+@media (min-width: 768px)
+    .header
+        height: 91px
+    .video-solution-text
+        margin-top: 20px
+        &__title
+            font-size: 48px
+            line-height: 48px
+            margin-top: 45px
+
+    .video-company
+        background-image: url('../../../public/background__video_768.webp')
+        margin-top: 56px
+        video
+            height: 369px
+            width: calc(100% - 213px)
+            padding: 35px 0px
+
+    .video-solution-steps
+        &__number
+            font-size: 18px
+            line-height: 27px
+        &__line
+            width: 15px
+            top: -8px
+            margin-left: 12px
+        &__name
+            font-size: 30px
+            line-height: 45px
+            margin-left: 12px
+
+
+@media (min-width: 992px)
+    .video-company
+        background-image: url('../../../public/background_video_992.webp')
+        margin-top: 75px
+        video
+            height: 367px
+            width: calc( 100% - 70px )
+    .contact-us-button
+        margin: 22px auto
+    .order-lg__text
+        order: 2
+    .video-solution-text__title
+        margin-top: 192px
+    .video-solution-steps-inner
+        margin-top: 88px
+
+@media (min-width: 1200px)
+    .video-company
+        video
+            height: 435px
+            width: calc( 100% - 80px )
+
+@media (min-width: 1400px)
+    .video-solution-text
+        &__title
+            font-size: 58px
+            line-height: 56px
+    .video-company
+        background-image: url('../../../public/background__video_1366.webp')
+        margin-top: 40px
+        video
+            height: 435px
+            width: calc( 100% - 80px )
+    .video-solution-steps-inner
+        margin-top: 200px
+
+    .video-solution-text
+        &__title
+            margin-top: 180px
+    .video-solution-steps
+        &__name
+            font-size: 50px
+            line-height: 50px
+        &__number
+            top: -10px
+        &__line
+            top: -16px
+    .contact-us-button
+        padding: 12.5px 45px
+        font-size: 18px
+
+@media (min-width: 1496px)
+    .video-company
+        background-image: url('../../../public/background__video_1366.webp')
+        video
+            height: 523px
+            width: calc( 100% - 80px )
+    .video-solution-steps
+        &__name
+            font-size: 62px
+            line-height: 62px
+        &__number
+            top: -15px
+        &__line
+            top: -20px
+
+    .video-solution-text
+        &__title
+            font-size: 70px
+            line-height: 76px
+            margin-top: 220px
+
+    .video-solution-steps-inner
+        margin-top: 230px

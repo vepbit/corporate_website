@@ -1,0 +1,197 @@
+.join-to-us
+    padding-top: 70px
+    padding-bottom: 85px
+    // background-image: url('../../../images/src/background_contact.png')
+    background-image: url('../../../public/background_contact.webp') 
+    background-repeat: no-repeat
+    background-position: center right
+    background-color: var( --color-form-bg)
+    // background-size: contain
+    &-form
+        &__label
+            font-size: 14px
+            font-family: 'Lato-Regular'
+            line-height: 24px
+            color: var(--color-form-main-text)
+            padding: 5px 15px
+            border-radius: 5px
+            box-shadow: 0px 4px 4px var(--color-form-label-box-shadow)
+            position: relative
+            background-color: var(--color-form-main-bg)
+            bottom: 0px
+        &__input
+            width: 100%
+            border: 2px
+            border-radius: 5px
+            height: 38px
+            padding: 5px 10px
+            background-color: var(--color-form-main-bg)
+        &__error
+            color: #1d1d1d
+            height: 26px
+        &__select
+            width: 100%
+            border: 2px
+            border-radius: 5px
+            height: 45px
+            padding: 5px 10px
+            // background-image: url('../../../images/src/contact-selector.svg') 
+
+
+            background-repeat: no-repeat
+            background-position: calc(100% - 14px) center
+            background-size: revert
+            -webkit-appearance: none
+            background-color: var(--color-form-main-bg)
+            &:focus-visible
+                outline: none
+            option
+                font-size: 14px
+                padding: 5px 10px
+            &:focus
+            &::before
+                content: ''
+                width: 12px
+                height: 2px
+                background-color: var(--color-form-main-bg)
+                margin-right: 13px
+            
+        &__textarea
+            width: 100%
+            height: 85px
+            border: 2px
+            border-radius: 5px
+            padding: 10px 10px
+            resize: none
+        &-input-inner
+            margin-bottom: 10px
+        &__description
+            border-radius: 5px
+            height: 90px
+        &__range
+            -webkit-appearance: none
+            margin: 0
+            width: 100%
+            border-radius: 100px
+
+            &:focus
+                outline: none
+            &::-webkit-slider-runnable-track
+                width: 100%
+                height: 23px
+                cursor: pointer
+                box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d
+                background: #fff
+                border-radius: 10px
+                border: 0px 
+            &::-webkit-slider-thumb
+                box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d
+                border: 0px 
+                height: 23px
+                width: 122px
+                border-radius: 100px
+                background: linear-gradient(273.65deg, var(--primary-gradient-one) 0%, var(--primary-gradient-two) 100%)
+                cursor: pointer
+                -webkit-appearance: none
+                // margin-top: -3.8px
+            &:focus::-webkit-slider-runnable-track
+                background: #fff
+            &-details
+                font-size: 14px
+                font-family: 'Lato-Regular'
+                line-height: 18px
+                color: var(--color-form-main-text)
+                padding: 3px 10px
+                background-color: var(--color-form-main-bg)
+                display: block
+                width: fit-content
+                margin-top: 9px
+                margin-bottom: 7px
+
+        &__send
+            font-size: 16px
+            line-height: 24px
+            font-family: 'Lato-Bold'
+            position: relative
+            color: var(--color-form-send-text)
+            line-height: 24px
+            padding: 8px 52px
+            border: 0px
+            border-radius: 5px
+            background: linear-gradient(273.65deg, var(--primary-gradient-one) 0%, var(--primary-gradient-two ) 100%)
+            display: block
+            margin: 25px auto
+            &::after
+                content: ''
+                position: absolute
+                top: 2px
+                left: -1px
+                width: 100%
+                height: 100%
+                filter: blur(var(--size-form-send-filter)) 
+                background-color: var(--color-form-send-filter)
+                z-index: -1
+
+            &:hover
+                color: var(--color-form-send-text)
+                background: linear-gradient(-273.65deg, var(--primary-gradient-one) 0%, var(--primary-gradient-two ) 100%)
+        &__status
+            font-size: 18px
+            color: var(--color-form-sucsess-text)
+            line-height: 27px
+            font-family: 'Lato-Regular'
+            text-align: center
+            padding: 11px 40px
+            margin: 40px auto
+            box-shadow: 0px 0px 15px var(--color-form-sucsess-box-shadow)
+            display: none
+        &__status.visible
+            display: block
+.join-to-us-form__input.error,
+.join-to-us-form__textarea.error,
+.join-to-us-form__select.error,
+.join-to-us-form__range.error
+    border: 1px solid rgba(201, 43, 43, 0.5)
+    box-shadow: 0px 0px 25px rgba(206, 0, 0, 0.15)
+
+@media (min-width: 576px)
+    .join-to-us
+        &-form
+            &__label
+                font-size: 16px
+                padding: 5px 20px
+
+@media (min-width: 768px)
+    .join-to-us
+        padding-top: 120px
+@media (min-width: 992px)
+    .join-to-us
+        padding-top: 150px
+        padding-bottom: 90px
+        &-form
+            &__send
+                margin: 30px auto
+@media (min-width: 1400px)
+    .join-to-us
+        padding-top: 200px
+        padding-bottom: 90px
+        &-form
+            &__input
+                height: 45px
+            &__range
+                &::-webkit-slider-runnable-track
+                    height: 28px
+                &::-webkit-slider-thumb
+                    height: 28px
+                    width: 150px
+            &__send
+                font-size: 18px
+                line-height: 27px
+                padding: 11px 55px
+@media (min-width: 1496px)
+    .join-to-us
+        padding-top: 300px
+        padding-bottom: 120px
+        &-form
+            &__send
+                margin: 40px auto 
